@@ -14,17 +14,18 @@ public class Main {
         try {
             StringInformator.getLetterSequence(document);
         } catch (ABCException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         try {
             StringInformator.getStartDigitSequence(document);
         } catch (NumericException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         try {
             StringInformator.getEndsDigitSequence(document);
         } catch (SubsequenceException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }
+
